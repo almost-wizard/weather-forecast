@@ -1,0 +1,57 @@
+@import url("http://fonts.cdnfonts.com/css/scada");
+@import url("https://fonts.cdnfonts.com/css/noto-sans");
+
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  background: #212529;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  font-family: "Scada", sans-serif;
+  height: 120px;
+}
+
+main {
+  height: calc(100% - 200px);
+  flex: 1 0 auto;
+}
+
+footer {
+  font-family: "Scada", sans-serif;
+  height: 80px;
+  flex: 0 0 auto;
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: #c5c5c5;
+}
+::-webkit-scrollbar-thumb {
+  width: 1em;
+  background-color: #6c757d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4e4f50;
+}

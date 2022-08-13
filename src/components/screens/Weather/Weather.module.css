@@ -1,0 +1,50 @@
+.container,
+.loaderContainer {
+  font-family: "Noto Sans", sans-serif;
+  max-width: 930px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.container {
+  overflow: auto;
+  border-radius: 10px 0 0 10px;
+  background: #fff;
+  height: 600px;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change_city {
+  font-family: "Scada", sans-serif;
+  background-color: #ffc107;
+  border-radius: 0 0 10px 0;
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+
+.change_city:hover {
+  background-color: #e0aa07;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.arrow_box {
+  text-align: center;
+}
+
+.arrow_down {
+  border: solid #212529;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

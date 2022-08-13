@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.link:hover {
+  transition: 0.5s;
+  color: #ffc107;
+}
+
+@media screen and (max-height: 700px) {
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .description {
+    font-size: 13px;
+  }
+}

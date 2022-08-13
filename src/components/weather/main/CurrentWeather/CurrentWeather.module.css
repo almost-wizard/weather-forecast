@@ -1,0 +1,161 @@
+.container_border {
+  margin: 20px 20px 0;
+  width: auto;
+}
+
+.container_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.title {
+  display: inline-block;
+  color: #212529;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+
+.title:nth-child(2) {
+  text-align: right;
+}
+
+.container {
+  color: white;
+  border-radius: 10px;
+  background-color: #212529;
+  display: flex;
+  padding: 10px;
+}
+
+.box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left_box_icon {
+  width: 50%;
+  text-align: center;
+}
+
+.weather_icon {
+  width: 85%;
+}
+
+.left_box_info {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.left_box_deegre {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.left_box_text {
+  font-size: 17px;
+}
+
+.right_box_info {
+  font-family: "Scada", sans-serif;
+}
+
+.right_box_info_text {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .box:nth-child(1) {
+    width: 40%;
+  }
+
+  .box:nth-child(2) {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 17px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    justify-content: flex-start;
+  }
+
+  .box:nth-child(1) {
+    width: 100%;
+  }
+
+  .box:nth-child(2) {
+    width: 100%;
+  }
+
+  .weather_icon {
+    width: 50%;
+  }
+
+  .left_box_info {
+    text-align: center;
+  }
+
+  .left_box_deegre {
+    font-size: 30px;
+  }
+
+  .left_box_text {
+    font-size: 15px;
+  }
+
+  .right_box_info {
+    margin: 10px 40px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .box:nth-child(1) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .left_box_icon {
+    width: 100%;
+  }
+
+  .left_box_info {
+    width: 100%;
+  }
+
+  .right_box_info {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container_border {
+    margin: 20px 0;
+  }
+
+  .container_info {
+    flex-direction: column;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title:nth-child(2) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 50px;
+  color: #fff;
+}
+
+@media screen and (max-height: 550px) {
+  .header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .logo {
+    font-size: 30px;
+  }
+}

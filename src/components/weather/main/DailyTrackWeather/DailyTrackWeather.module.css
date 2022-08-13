@@ -1,0 +1,63 @@
+.container {
+  color: black;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 15px 5px;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .2s;
+  transform: scale(1.03);
+}
+
+.red_text {
+  color: red;
+  font-weight: 700;
+}
+
+.date_text {
+  color: rgb(78, 78, 78);
+  font-size: 15px;
+}
+
+.weather_icon {
+  width: 70%;
+}
+
+.day_temp_text {
+  color: black;
+  font-size: 17px;
+}
+
+.night_temp_text {
+  color: rgb(78, 78, 78);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: none;
+  }
+}

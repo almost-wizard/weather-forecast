@@ -1,0 +1,115 @@
+/* Search control */
+
+.search_city_control {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: end;
+  margin: 100px 0 20px;
+}
+
+.search_city_title {
+  font-family: "Scada", sans-serif;
+  font-size: 37px;
+  color: white;
+}
+
+.search_city_input {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  color: white;
+  width: 300px;
+  margin: 30px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+/* Cities list */
+
+.search_city_results {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.search_city_subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+
+.search_city_list {
+  text-align: center;
+  max-width: 1000px;
+}
+
+.search_city_item {
+  color: black;
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.search_city_item:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.2s linear;
+  color: #fff;
+}
+
+/* Media */
+
+@media screen and (max-width: 500px), (max-height: 767px) {
+  .search_city_title {
+    font-size: 25px;
+  }
+
+  .search_city_input {
+    font-size: 13px;
+    margin: 7px 0;
+    width: 260px;
+  }
+
+  .search_city_item {
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .search_city_title {
+    font-size: 20px;
+  }
+
+  .search_city_input {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .search_city_item {
+    font-size: 11px;
+    padding: 3px 5px;
+    margin: 3px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .search_city_control,
+  .search_city_results {
+    height: auto;
+    margin: 0;
+  }
+}

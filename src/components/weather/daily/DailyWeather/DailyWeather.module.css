@@ -1,0 +1,154 @@
+.container {
+  font-family: "Scada", sans-serif;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.card {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.day {
+  width: 70px;
+  font-size: 40px;
+  font-weight: 1000;
+  color: #000;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.grey {
+  font-size: 16px;
+  color: #909090;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #495056;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  border-bottom: 1px solid #909090;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #909090;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.box:nth-child(1) {
+  flex-direction: column;
+}
+
+.temp {
+  margin: auto;
+}
+
+.temp:nth-child(2) {
+  text-align: right;
+}
+
+.weather_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather_icon {
+  width: 45%;
+}
+
+.sun_move {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sunrise,
+.sunset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sun_move_icon {
+  width: 50%;
+}
+
+.one_day_part_temp {
+  margin: 15px 0;
+}
+
+.footer {
+  margin: 10px 0;
+}
+
+.uvi_text {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    font-size: 15px;
+  }
+
+  .grey,
+  .uvi_text {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 15px 0;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+  }
+
+  .weather_icon {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    margin: 15px 0;
+    border-radius: 0;
+  }
+
+  .container {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .box:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .temp {
+    margin: 0 20px;
+  }
+
+  .temp:nth-child(2) {
+    text-align: left;
+  }
+}
