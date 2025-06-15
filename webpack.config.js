@@ -35,6 +35,10 @@ module.exports = {
         use: ["file-loader"],
       },
       {
+        test: /\.json$/,
+        type: "json",
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
